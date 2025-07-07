@@ -6,7 +6,7 @@ exports.checkAdmin = async (req, res, next) => {
     if (!usuario) {
         return res.status(401).send({ message: "No autorizado" });
     }
-    if (!usuario.admin) {
+    if (!usuario.is_admin) {
         return res.status(403).send({ message: "Acceso denegado" });
     }
 

@@ -57,7 +57,7 @@ exports.login = async (req, res) => {
     })
 
     if (!user) {
-        return res.status(400).send({ message: "Correo no encontrado" });
+        return res.status(400).send({ message: "Nombre incorrecto" });
     }
 
     const hashedPassword = generatePassword(password);

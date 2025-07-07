@@ -17,21 +17,21 @@ module.exports = function (sequelize) {
         },
         itemId: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         abilityId: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         natureId: {
             type: DataTypes.INTEGER,
-            allowNull: false
+            allowNull: true
         },
         evHp: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 0
-        },
+        },  
         evAtk: {
             type: DataTypes.INTEGER,
             allowNull: false,
